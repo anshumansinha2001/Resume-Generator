@@ -109,8 +109,8 @@ function generateCV() {
   document.getElementById("aqT").innerHTML = str2;
 
   // Switching modes
-  document.getElementById("cv-form").style.display = "none";
   document.querySelector("header").style.display = "none";
+  document.getElementById("cv-form").style.display = "none";
   document.getElementById("cv-template").style.display = "block";
 }
 
@@ -121,6 +121,7 @@ function printCV() {
 
 // Previous page
 function handlePrevClick() {
+  document.querySelector("header").style.display = "block";
   document.getElementById("cv-form").style.display = "block";
   document.getElementById("cv-template").style.display = "none";
 }
