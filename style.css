@@ -16,6 +16,20 @@ textarea {
     font-family: inherit;
 }
 
-h3 {
-    font-weight: 700;
+header {
+    /* display: none; */
+}
+
+#cv-form {
+    /* display: none; */
+}
+
+#cv-template {
+
+    display: none;
+}
+
+.myimg {
+    width: 180px;
+    margin-top: 6.3rem;
 }

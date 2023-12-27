@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Resume Generator is used to build the CV by given input.">
-    <link rel="shortcut icon" href="curriculum-vitae.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <title>Resume Generator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel=" stylesheet" href="style.css">
@@ -13,104 +13,184 @@
 </head>
 
 <body>
-    <header class="bg-dark text-light text-center">
-        <h1 class="p-2">Resume Generator</h1>
-        <p class="pb-2">by Anshuman Sinha</p>
+    <header class="bg-opacity-75 bg-black text-light text-center">
+        <h1 class="p-2  m-0">Resume Generator</h1>
     </header>
 
-    <section class="container details-container">
+    <section class="container details-container" id="cv-form">
         <div class="row">
             <div class="col-md-6 mt-3">
-                <h3>Personal Details</h3>
+                <h3 class="fw-bolder">Personal Details</h3>
                 <div class="row">
 
                     <div class="col-sm-6">
                         <div class="form-group mt-3">
-                            <label class="text-secondary mb-2" for="fNameField">First Name </label>
-                            <input type="text" id="fNameField">
+                            <label class="text-secondary mb-2 fw-medium" for="fNameField">First Name </label>
+                            <input type="text" id="fNameField" class="requiredField" required>
                         </div>
                         <div class="form-group mt-3">
-                            <label class="text-secondary mb-2" for="emailField">Email </label>
-                            <input type="email" id="emailField">
+                            <label class="text-secondary mb-2 fw-medium" for="emailField">Email </label>
+                            <input type="email" id="emailField" class="requiredField" required>
                         </div>
                         <div class="form-group mt-3">
-                            <label class="text-secondary mb-2" for="countryField">Country </label>
-                            <input type="text" id="countryField">
+                            <label class="text-secondary mb-2 fw-medium" for="countryField">Country </label>
+                            <input type="text" id="countryField" class="requiredField" required>
                         </div>
                     </div>
 
 
                     <div class="col-sm-6">
                         <div class="form-group mt-3">
-                            <label class="text-secondary mb-2" for="lNameField">Last Name </label>
-                            <input type="text" id="lNameField">
+                            <label class="text-secondary mb-2 fw-medium" for="lNameField">Last Name </label>
+                            <input type="text" id="lNameField" class="requiredField" required>
                         </div>
                         <div class="form-group mt-3">
-                            <label class="text-secondary mb-2" for="phoneField">Phone </label>
-                            <input type="number" id="phoneField">
+                            <label class="text-secondary mb-2 fw-medium" for="phoneField">Phone </label>
+                            <input type="number" id="phoneField" class="requiredField" required>
                         </div>
                         <div class="form-group mt-3">
-                            <label class="text-secondary mb-2" for="cityField">City </label>
-                            <input type="text" id="cityField">
+                            <label class="text-secondary mb-2 fw-medium" for="cityField">City </label>
+                            <input type="text" id="cityField" class="requiredField" required>
                         </div>
                     </div>
                 </div>
 
 
                 <div class="form-group mt-3">
-                    <label class="text-secondary mb-2" for="addressField">Your Address </label>
-                    <textarea id="addressField" rows="4"></textarea>
+                    <label class="text-secondary mb-2 fw-medium" for="addressField">Your Address (optional) </label>
+                    <textarea id="addressField" rows="4"
+                        placeholder="Enter your address along with your postal code..."></textarea>
                 </div>
 
-                <p class="text-primary mt-4">Important Links</p>
+                <p class="text-primary mt-4 fw-medium">Important Links</p>
                 <div class="form-group mt-3">
-                    <label class="text-secondary mb-2" for="githubField">GitHub</label>
-                    <input type="url" class="form-control border-primary" id="githubField">
+                    <label class="text-secondary mb-2 fw-medium" for="githubField">GitHub</label>
+                    <input type="url" class="form-control border-primary requiredField" id="githubField" required>
                 </div>
                 <div class="form-group mt-3">
-                    <label class="text-secondary mb-2" for="linkedinField">Linkedin</label>
-                    <input type="url" class="form-control border-primary" id="linkedinField">
+                    <label class="text-secondary mb-2 fw-medium" for="linkedinField">Linkedin</label>
+                    <input type="url" class="form-control border-primary requiredField" id="linkedinField" required>
                 </div>
                 <div class="form-group mt-3">
-                    <label class="text-secondary mb-2" for="instaField">Instagram (optional)</label>
+                    <label class="text-secondary mb-2 fw-medium" for="instaField">Instagram (optional)</label>
                     <input type="url"" class=" form-control border-primary" id="instaField">
                 </div>
             </div>
 
 
             <div class="col-md-6 mt-3">
-                <h3>Professional Details</h3>
+                <h3 class="fw-bolder">Professional Details</h3>
                 <div class="form-group mt-4">
-                    <label class="text-secondary mb-2" for="sumarryField">Summary </label>
-                    <textarea id="sumarryField" rows="9"
-                        placeholder="e.g. Passionate science teacher with 8+ years of experience and a track record of..."></textarea>
+                    <label class="text-secondary mb-2 fw-medium" for="summaryField">Summary </label>
+                    <textarea id="summaryField" rows="9" class="requiredField"
+                        placeholder="e.g. Passionate science teacher with 8+ years of experience and a track record of..."
+                        required></textarea>
                 </div>
                 <div class="form-group mt-3" id="we">
-                    <label class="text-secondary mb-2" for="sumarryField">Work Experience</label>
-                    <textarea id="sumarryField" rows="4" class="weField"
-                        placeholder="e.g. Sotware devolper at Microsoft"></textarea>
+                    <label class="text-secondary mb-2 fw-medium" for="sumarryField">Work Experience</label>
+                    <textarea id="sumarryField" class="weField requiredField" required></textarea>
 
                     <!-- new textarea  (will come after pressing Add btn)-->
 
                     <div class="container mt-3 text-end" id="weAddButton">
-                        <button class="btn btn-sm  btn-dark" onclick="addNewWEField()">Add +</button>
+                        <button class="btn btn-sm  btn-dark fw-medium" onclick="addNewWEField()">Add +</button>
                     </div>
                 </div>
                 <div class="form-group mt-3" id="aq">
-                    <label class="text-secondary mb-2" for="sumarryField">Academic Qualification</label>
-                    <textarea id="sumarryField" rows="4" class="aqField"></textarea>
+                    <label class="text-secondary mb-2 fw-medium" for="sumarryField">Academic Qualification</label>
+                    <textarea id="aqField" class="aqField requiredField" required></textarea>
 
                     <!-- new textarea  (will come after pressing Add btn)-->
 
                     <div class="container mt-3 text-end" id="aqAddButton">
-                        <button class="btn btn-sm  btn-dark" onclick="addNewAQField()">Add +</button>
+                        <button class="btn btn-sm  btn-dark fw-medium" onclick="addNewAQField()">Add +</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="container text-center my-4">
-            <button class="btn btn-primary btn-lg">Generate CV</button>
+            <button onclick="generateCV()" class="btn btn-primary btn-lg fw-medium">Generate CV</button>
+        </div>
+    </section>
+
+    <section class="container-fluid" id="cv-template">
+        <div class="row">
+            <div class="col-md-4 bg-opacity-75 bg-black text-light text-center">
+                <!-- first col  -->
+                <img src="./images/Default_pfp.jpg" class="img-fluid myimg" alt="profil">
+
+                <div class="container mt-3">
+                    <p><span id="fNameT1">Anshuman </span><span> </span><span id="lNameT1">Sinha</span></p>
+                    <p id="emailT">anshumansinha@gmail.com</p>
+                    <p id="phoneT">+91 9856478954</p>
+                    <p><span id="cityT">Bangalore,</span> <span id="countryT">India</span></p>
+                    <p id="addressT">New Slv pg, 8th cross, Thirumanhali, 560064</p>
+                    <hr class="mt-4">
+                    <div class="d-flex justify-content-around mt-4">
+                        <p><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                id="githubT" href="#1">GitHub</a></p>
+                        <p><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                id="linkedinT" href="#2">Linkedin</a></p>
+                        <p><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                id="instaT" href="#3">Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 py-5">
+                <!-- second col  -->
+                <h1 class="text-center fw-bolder"><span id="fNameT2">Anshuman</span><span> </span><span
+                        id="lNameT2">Sinha</span>
+                </h1>
+
+                <!-- Summary card  -->
+                <div class="card mt-4">
+                    <div class="card-header bg-black bg-opacity-75 text-light">
+                        <h3>Summary</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="summaryT">This is summary section</p>
+                    </div>
+                </div>
+
+                <!-- Work Experience  -->
+                <div class="card mt-4">
+                    <div class="card-header bg-black bg-opacity-75 text-light">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Academic Qualification  -->
+                <div class="card mt-4">
+                    <div class="card-header bg-black bg-opacity-75 text-light">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Print Button  -->
+                <div class="conatiner mt-3 text-center d-flex justify-content-center gap-4">
+                    <button onclick="handlePrevClick()" class="btn btn-secondary fw-medium">&larr; Previous</button>
+                    <button onclick="printCV()" class="btn btn-dark fw-medium">Print CV</button>
+                </div>
+            </div>
         </div>
     </section>
 
