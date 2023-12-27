@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume Generator is used to build the CV by given input.">
+    <link rel="shortcut icon" href="curriculum-vitae.png" type="image/x-icon">
+    <title>Resume Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel=" stylesheet" href="style.css">
+</head>
+</head>
+
+<body>
+    <header class="bg-dark text-light text-center">
+        <h1 class="p-2">Resume Generator</h1>
+        <p class="pb-2">by Anshuman Sinha</p>
+    </header>
+
+    <section class="container details-container">
+        <div class="row">
+            <div class="col-md-6 mt-3">
+                <h3>Personal Details</h3>
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <div class="form-group mt-3">
+                            <label class="text-secondary mb-2" for="fNameField">First Name </label>
+                            <input type="text" id="fNameField">
+                        </div>
+                        <div class="form-group mt-3">
+                            <label class="text-secondary mb-2" for="emailField">Email </label>
+                            <input type="email" id="emailField">
+                        </div>
+                        <div class="form-group mt-3">
+                            <label class="text-secondary mb-2" for="countryField">Country </label>
+                            <input type="text" id="countryField">
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <div class="form-group mt-3">
+                            <label class="text-secondary mb-2" for="lNameField">Last Name </label>
+                            <input type="text" id="lNameField">
+                        </div>
+                        <div class="form-group mt-3">
+                            <label class="text-secondary mb-2" for="phoneField">Phone </label>
+                            <input type="number" id="phoneField">
+                        </div>
+                        <div class="form-group mt-3">
+                            <label class="text-secondary mb-2" for="cityField">City </label>
+                            <input type="text" id="cityField">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group mt-3">
+                    <label class="text-secondary mb-2" for="addressField">Your Address </label>
+                    <textarea id="addressField" rows="4"></textarea>
+                </div>
+
+                <p class="text-primary mt-4">Important Links</p>
+                <div class="form-group mt-3">
+                    <label class="text-secondary mb-2" for="githubField">GitHub</label>
+                    <input type="url" class="form-control border-primary" id="githubField">
+                </div>
+                <div class="form-group mt-3">
+                    <label class="text-secondary mb-2" for="linkedinField">Linkedin</label>
+                    <input type="url" class="form-control border-primary" id="linkedinField">
+                </div>
+                <div class="form-group mt-3">
+                    <label class="text-secondary mb-2" for="instaField">Instagram (optional)</label>
+                    <input type="url"" class=" form-control border-primary" id="instaField">
+                </div>
+            </div>
+
+
+            <div class="col-md-6 mt-3">
+                <h3>Professional Details</h3>
+                <div class="form-group mt-4">
+                    <label class="text-secondary mb-2" for="sumarryField">Summary </label>
+                    <textarea id="sumarryField" rows="9"
+                        placeholder="e.g. Passionate science teacher with 8+ years of experience and a track record of..."></textarea>
+                </div>
+                <div class="form-group mt-3" id="we">
+                    <label class="text-secondary mb-2" for="sumarryField">Work Experience</label>
+                    <textarea id="sumarryField" rows="4" class="weField"
+                        placeholder="e.g. Sotware devolper at Microsoft"></textarea>
+
+                    <!-- new textarea  (will come after pressing Add btn)-->
+
+                    <div class="container mt-3 text-end" id="weAddButton">
+                        <button class="btn btn-sm  btn-dark" onclick="addNewWEField()">Add +</button>
+                    </div>
+                </div>
+                <div class="form-group mt-3" id="aq">
+                    <label class="text-secondary mb-2" for="sumarryField">Academic Qualification</label>
+                    <textarea id="sumarryField" rows="4" class="aqField"></textarea>
+
+                    <!-- new textarea  (will come after pressing Add btn)-->
+
+                    <div class="container mt-3 text-end" id="aqAddButton">
+                        <button class="btn btn-sm  btn-dark" onclick="addNewAQField()">Add +</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center my-4">
+            <button class="btn btn-primary btn-lg">Generate CV</button>
+        </div>
+    </section>
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
