@@ -33,3 +33,9 @@ header {
     width: 180px;
     margin-top: 6.3rem;
 }
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
