@@ -43,7 +43,7 @@ function generateCV() {
   for (var i = 0; i < requiredFields.length; i++) {
     // Check if the required field is empty
     if (requiredFields[i].value.trim() === "") {
-      alert("Please fill in the required field.");
+      alert("Please fill the details in the required fields !!");
       return; // Stop processing further elements if one is empty
     }
   }
