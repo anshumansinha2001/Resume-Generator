@@ -2,7 +2,7 @@ function addNewWEField() {
   let newNode = document.createElement("textarea");
   newNode.classList.add("weField");
   newNode.style.marginTop = "10px";
-  newNode.setAttribute("placeholder", "Kindly Enter the detail here");
+  newNode.setAttribute("placeholder", "Enter your detail!");
   //   newNode.setAttribute("rows", 4);
 
   let weAddButtonOb = document.getElementById("weAddButton");
@@ -15,7 +15,7 @@ function addNewAQField() {
   let newNode = document.createElement("textarea");
   newNode.classList.add("aqField");
   newNode.style.marginTop = "10px";
-  newNode.setAttribute("placeholder", "Kindly Enter the detail here");
+  newNode.setAttribute("placeholder", "Enter your detail!");
 
   let aqAddButtonOb = document.getElementById("aqAddButton");
   let aqOb = document.getElementById("aq");
@@ -27,7 +27,7 @@ function addNewSKField() {
   let newNode = document.createElement("textarea");
   newNode.classList.add("skField");
   newNode.style.marginTop = "10px";
-  newNode.setAttribute("placeholder", "Kindly Enter the detail here");
+  newNode.setAttribute("placeholder", "Enter your detail!");
 
   let skAddButtonOb = document.getElementById("skAddButton");
   let skOb = document.getElementById("sk");
