@@ -69,7 +69,10 @@
                 </div>
 
                 <p class="text-primary mt-4 fw-medium">Important Links</p>
-
+                <div class="form-group mt-3">
+                    <label class="text-secondary mb-2 fw-medium" for="githubField">GitHub</label>
+                    <input type="url" class="form-control border-primary requiredField" id="githubField" required>
+                </div>
                 <div class="form-group mt-3">
                     <label class="text-secondary mb-2 fw-medium" for="linkedinField">Linkedin</label>
                     <input type="url" class="form-control border-primary requiredField" id="linkedinField" required>
@@ -101,7 +104,7 @@
                     </div>
                 </div>
                 <div class="form-group mt-3" id="aq">
-                    <label class="text-secondary mb-2 fw-medium" for="aqField">Academic Qualification</label>
+                    <label class="text-secondary mb-2 fw-medium" for="sumarryField">Academic Qualification</label>
                     <textarea id="aqField" class="aqField requiredField"
                         placeholder="e.g. Oxademy Business school | Mumbai India | 2023 (GPA 8.7)" required></textarea>
 
@@ -126,7 +129,7 @@
         </div>
 
         <div class="container text-center my-lg-5">
-            <button onclick="generateCV()" class="btn btn-primary btn-lg fw-medium my-3">Generate CV</button>
+            <button onclick="generateCV()" class="btn btn-primary fw-medium my-3">Generate CV</button>
         </div>
     </section>
 

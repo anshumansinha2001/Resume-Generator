@@ -43,7 +43,7 @@ function generateCV() {
   for (var i = 0; i < requiredFields.length; i++) {
     // Check if the required field is empty
     if (requiredFields[i].value.trim() === "") {
-      alert("Please fill in the required fields.");
+      alert("Please fill in the required field.");
       return; // Stop processing further elements if one is empty
     }
   }
@@ -130,7 +130,7 @@ function generateCV() {
 
   // Switching modes
   document.querySelector("header").style.display = "none";
-  document.querySelector("footer").style.display = "none";
+  document.querySelector("footer").classList.add("d-none");
   document.getElementById("cv-form").style.display = "none";
   document.getElementById("cv-template").style.display = "block";
 }
@@ -143,7 +143,7 @@ function printCV() {
 // Previous page
 function handlePrevClick() {
   document.querySelector("header").style.display = "block";
-  document.querySelector("footer").style.display = "block";
+  document.querySelector("footer").classList.remove("d-none");
   document.getElementById("cv-form").style.display = "block";
   document.getElementById("cv-template").style.display = "none";
 }
