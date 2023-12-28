@@ -148,15 +148,15 @@ function generateCV() {
   document.getElementById("cv-template").style.display = "block";
 }
 
-// Printing CV
-function printCV() {
-  window.print();
-}
-
 // Previous page
 function handlePrevClick() {
   document.querySelector("header").style.display = "block";
   document.querySelector("footer").classList.remove("d-none");
   document.getElementById("cv-form").style.display = "block";
   document.getElementById("cv-template").style.display = "none";
+}
+
+// Printing CV
+function printCV() {
+  window.print();
 }

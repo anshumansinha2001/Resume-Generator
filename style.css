@@ -28,11 +28,26 @@ header {
     display: none;
 }
 
+#lNameT2,
+#fNameT2 {
+    color: #711DB0;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 0.4rem;
+}
+
 .myimg {
-    width: 190px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-top: 3rem;
+}
+
+footer {}
+
+.bg-purple {
+    background-color: #711DB0;
+    color: whitesmoke;
 }
 
 
@@ -41,9 +56,11 @@ header {
 /* icons */
 .bi {
     color: white;
+    opacity: 75%;
 }
 
 .bi:hover {
-    color: yellow;
+    color: whitesmoke;
+    opacity: 100%;
     cursor: pointer;
 }
