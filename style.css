@@ -35,7 +35,16 @@ header {
 }
 
 footer {
-    background-color: black;
+    /* height: 20vh; */
+}
+
+
+/* icons */
+.bi {
     color: white;
-    padding: 10px;
+}
+
+.bi:hover {
+    color: yellow;
+    cursor: pointer;
 }

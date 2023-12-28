@@ -7,6 +7,8 @@
     <meta name="description" content="Resume Generator is used to build the CV by given input.">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <title>Resume Generator</title>
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel=" stylesheet" href="style.css">
 </head>
@@ -194,13 +196,21 @@
         </div>
     </section>
 
-    <footer class="d-flex justify-content-between align-items-center">
-        <div class="logo">
-            <img src="images/favicon.png" width="40">
+    <footer class="bg-black text-white d-flex flex-column justify-content-center p-4">
+        <div class="container">
+            <div class="resumebuilder d-flex justify-content-between">
+                <div class="img"><img src="images/favicon.png" width="50"></div>
+                <div class="title">
+                    <h5 class="text-secondary">Resume Generator</h5>
+                    <div class="linkslogo d-flex justify-content-end gap-3">
+                        <a href="https://www.linkedin.com/in/theanshumansinha/"><i class="bi bi-linkedin fs-3"></i></a>
+                        <a href="https://github.com/theanshumansinha"><i class="bi bi-github fs-3"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
-        <div class="text-center">© 2023 Anshuman Sinha, Inc. All rights reserved.
-        </div>
-
+        <p class="text-center">© 2023 Anshuman Sinha, Inc. All rights reserved.</p>
     </footer>
 
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
