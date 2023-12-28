@@ -68,6 +68,7 @@ function generateCV() {
     document.getElementById("phoneField").value;
 
   // in between comma logic for country & city
+
   let cityField = document.getElementById("cityField");
   let cityT = document.getElementById("cityT");
 
@@ -102,6 +103,7 @@ function generateCV() {
     document.getElementById("summaryField").value;
 
   // work experience logic (wes is WorkExperience's)
+
   let wes = document.getElementsByClassName("weField");
   let str1 = "";
 
@@ -111,6 +113,7 @@ function generateCV() {
   document.getElementById("weT").innerHTML = str1;
 
   // Acedamic Qualification (aqs is AcedamicQualificatione's)
+
   let aqs = document.getElementsByClassName("aqField");
   let str2 = "";
 
@@ -120,6 +123,7 @@ function generateCV() {
   document.getElementById("aqT").innerHTML = str2;
 
   // Sills (sks is Slill's)
+
   let sks = document.getElementsByClassName("skField");
   let str3 = "";
 
@@ -128,20 +132,25 @@ function generateCV() {
   }
   document.getElementById("skT").innerHTML = str3;
 
-  // code for setting image
-  let file = document.getElementById("imgField").files[0];
-  console.log(file);
+  // CODE FOR UPLAODING IMAGE / PHOTO
 
-  let reader = new FileReader();
-  reader.readAsDataURL(file);
-  console.log(reader.result);
+  let fileInput = document.getElementById("imgField");
+  let file = fileInput.files[0];
 
-  // set the image to template
-  reader.onloadend = () => {
-    document.getElementById("imgTemplate").src = reader.result;
-  };
+  // Check if a file is selected
+  if (file) {
+    let reader = new FileReader();
 
-  // Switching modes
+    reader.onloadend = () => {
+      // set the image to template
+      document.getElementById("imgTemplate").src = reader.result;
+    };
+    // Read the selected file as data URL
+    reader.readAsDataURL(file);
+  }
+
+  // SWITCHING PAGE
+
   document.querySelector("header").style.display = "none";
   document.querySelector("footer").classList.add("d-none");
   document.getElementById("cv-form").style.display = "none";
@@ -149,6 +158,7 @@ function generateCV() {
 }
 
 // Previous page
+
 function handlePrevClick() {
   document.querySelector("header").style.display = "block";
   document.querySelector("footer").classList.remove("d-none");
@@ -156,7 +166,7 @@ function handlePrevClick() {
   document.getElementById("cv-template").style.display = "none";
 }
 
-// Printing CV
+// PRINTING CV
 function printCV() {
   document.getElementById("printBtn").classList.add("d-none");
   // window.print();
