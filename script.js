@@ -128,6 +128,19 @@ function generateCV() {
   }
   document.getElementById("skT").innerHTML = str3;
 
+  // code for setting image
+  let file = document.getElementById("imgField").files[0];
+  console.log(file);
+
+  let reader = new FileReader();
+  reader.readAsDataURL(file);
+  console.log(reader.result);
+
+  // set the image to template
+  reader.onloadend = () => {
+    document.getElementById("imgTemplate").src = reader.result;
+  };
+
   // Switching modes
   document.querySelector("header").style.display = "none";
   document.querySelector("footer").classList.add("d-none");
