@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <header class="bg-purple  text-center">
-        <h1 class="p-2  m-0">Resume Generator</h1>
+    <header class="bg-purple text-center">
+        <h1 class="p-2  m-0">Resume Generator </h1>
     </header>
 
     <section class="container details-container" id="cv-form">
@@ -129,8 +129,7 @@
         </div>
 
         <div class="container text-center my-lg-5">
-            <button onclick="generateCV()" class="btn purple-pink btn-outline-danger fw-medium my-3">Generate
-                CV</button>
+            <button onclick="generateCV()" class="btn btn-outline-danger fw-medium my-3">Generate CV</button>
         </div>
     </section>
 
@@ -138,7 +137,7 @@
         <div class="row">
             <div class="col-md-4 bg-purple text-center">
                 <!-- first col  -->
-                <img src="./images/Default_pfp.jpg" id="imgTemplate" class="img-fluid myimg" alt="profil_picture">
+                <img src="./images/Default_pfp.jpg" class="img-fluid myimg" alt="profil">
 
                 <div class="container mt-3">
                     <p><span id="fNameT1">Anshuman </span><span> </span><span id="lNameT1">Sinha</span></p>
@@ -146,8 +145,8 @@
                     <p id="phoneT">+91 9856478954</p>
                     <p><span id="cityT">Bangalore,</span> <span id="countryT">India</span></p>
                     <p id="addressT">New Slv pg, 8th cross, Thirumanhali, 560064</p>
-                    <hr class="mt-5">
-                    <div class="d-flex justify-content-around mt-5">
+                    <hr class="mt-4">
+                    <div class="d-flex justify-content-around mt-4">
                         <p><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                 id="githubT" href="#1">GitHub</a></p>
                         <p><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
@@ -164,7 +163,7 @@
                 </h1>
 
                 <!-- Summary card  -->
-                <div class="card mt-4">
+                <div class="card mt-4 ">
                     <div class="card-header bg-purple">
                         <h3>Summary</h3>
                     </div>
@@ -222,7 +221,7 @@
                 </div>
 
                 <!-- Print Button  -->
-                <div class="conatiner mt-3 text-center d-flex justify-content-center gap-4">
+                <div id="printBtn" class="conatiner mt-3 text-center d-flex justify-content-center gap-4">
                     <button onclick="handlePrevClick()" class="btn btn-outline-secondary fw-medium">&larr;
                         Previous</button>
                     <button onclick="printCV()" class="btn btn-danger fw-medium">Print CV</button>
@@ -234,9 +233,9 @@
     <footer class="bg-purple d-flex flex-column justify-content-center p-4">
         <div class="container">
             <div class="resumebuilder d-flex justify-content-between">
-                <div class="img"><img src="images/favicon.png" width="50"></div>
+                <div class="img"><img id="imgTemplate" src=" images/favicon.png" width="50"></div>
                 <div class="title">
-                    <h5 class="text-light opacity-75">Resume Generator</h5>
+                    <h5 class="opacity-75">Resume Generator</h5>
                     <div class="linkslogo d-flex justify-content-end gap-3">
                         <a href="https://www.linkedin.com/in/theanshumansinha/"><i class="bi bi-linkedin fs-3"></i></a>
                         <a href="https://github.com/theanshumansinha"><i class="bi bi-github fs-3"></i></a>
@@ -247,8 +246,6 @@
         </div>
         <p class="text-center opacity-75">© 2023 Anshuman Sinha, Inc. All rights reserved.</p>
     </footer>
-
-
 
     <script src="script.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">

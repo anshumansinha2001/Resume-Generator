@@ -158,5 +158,11 @@ function handlePrevClick() {
 
 // Printing CV
 function printCV() {
-  window.print();
+  document.getElementById("printBtn").classList.add("d-none");
+  // window.print();
+  // Get the HTML content to be converted
+  var element = document.getElementById("cv-template");
+
+  // Use html2pdf library to generate PDF
+  html2pdf(element);
 }
