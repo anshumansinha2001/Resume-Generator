@@ -23,7 +23,18 @@ function addNewAQField() {
   aqOb.insertBefore(newNode, aqAddButtonOb);
 }
 
-// Generating CV
+function addNewSKField() {
+  let newNode = document.createElement("textarea");
+  newNode.classList.add("skField");
+  newNode.style.marginTop = "10px";
+  newNode.setAttribute("placeholder", "Kindly Enter the detail here");
+
+  let skAddButtonOb = document.getElementById("skAddButton");
+  let skOb = document.getElementById("sk");
+
+  skOb.insertBefore(newNode, skAddButtonOb);
+}
+
 // Generating CV
 function generateCV() {
   var requiredFields = document.getElementsByClassName("requiredField");
@@ -32,7 +43,7 @@ function generateCV() {
   for (var i = 0; i < requiredFields.length; i++) {
     // Check if the required field is empty
     if (requiredFields[i].value.trim() === "") {
-      alert("Please fill in the required field.");
+      alert("Please fill in the required fields.");
       return; // Stop processing further elements if one is empty
     }
   }
@@ -108,8 +119,18 @@ function generateCV() {
   }
   document.getElementById("aqT").innerHTML = str2;
 
+  // Sills (sks is Slill's)
+  let sks = document.getElementsByClassName("skField");
+  let str3 = "";
+
+  for (const i of sks) {
+    if (i.value !== "") str3 = str3 + `<li> ${i.value} </li>`;
+  }
+  document.getElementById("skT").innerHTML = str3;
+
   // Switching modes
   document.querySelector("header").style.display = "none";
+  document.querySelector("footer").style.display = "none";
   document.getElementById("cv-form").style.display = "none";
   document.getElementById("cv-template").style.display = "block";
 }
@@ -122,6 +143,7 @@ function printCV() {
 // Previous page
 function handlePrevClick() {
   document.querySelector("header").style.display = "block";
+  document.querySelector("footer").style.display = "block";
   document.getElementById("cv-form").style.display = "block";
   document.getElementById("cv-template").style.display = "none";
 }

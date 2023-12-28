@@ -90,7 +90,8 @@
                 </div>
                 <div class="form-group mt-3" id="we">
                     <label class="text-secondary mb-2 fw-medium" for="sumarryField">Work Experience</label>
-                    <textarea id="sumarryField" class="weField requiredField" required></textarea>
+                    <textarea id="sumarryField" class="weField requiredField" placeholder="e.g. Fresher..."
+                        required></textarea>
 
                     <!-- new textarea  (will come after pressing Add btn)-->
 
@@ -99,13 +100,24 @@
                     </div>
                 </div>
                 <div class="form-group mt-3" id="aq">
-                    <label class="text-secondary mb-2 fw-medium" for="sumarryField">Academic Qualification</label>
+                    <label class="text-secondary mb-2 fw-medium" for="aqField">Academic Qualification</label>
                     <textarea id="aqField" class="aqField requiredField" required></textarea>
 
                     <!-- new textarea  (will come after pressing Add btn)-->
 
                     <div class="container mt-3 text-end" id="aqAddButton">
                         <button class="btn btn-sm  btn-dark fw-medium" onclick="addNewAQField()">Add +</button>
+                    </div>
+                </div>
+                <div class="form-group mt-3" id="sk">
+                    <label class="text-secondary mb-2 fw-medium" for="skillField">Skills</label>
+                    <textarea id="skField" class="skField requiredField" placeholder="e.g. HTML, CSS, jQuery..."
+                        required></textarea>
+
+                    <!-- new textarea  (will come after pressing Add btn)-->
+
+                    <div class="container mt-3 text-end" id="skAddButton">
+                        <button class="btn btn-sm  btn-dark fw-medium" onclick="addNewSKField()">Add +</button>
                     </div>
                 </div>
             </div>
@@ -178,6 +190,22 @@
                     </div>
                     <div class="card-body">
                         <ul id="aqT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skills  -->
+                <div class="card mt-4">
+                    <div class="card-header bg-black bg-opacity-75 text-light">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="skT">
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in.</li>
 
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, in.</li>
