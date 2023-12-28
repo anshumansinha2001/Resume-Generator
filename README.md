@@ -3,7 +3,7 @@
 
 The Resume Builder is a web application that allows users to easily create and customize their CVs (Curriculum Vitae) by providing essential details such as personal information, work experience, education, and more. The generated CV can be printed directly from the browser.
 
-![Project Banner](Resume Generator UI.png)
+![Project Banner](screenshot.png)
 
 ## Features
 
